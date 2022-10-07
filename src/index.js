@@ -1,11 +1,12 @@
-import './style.css'
+import './styles/style.css'
+import firstLoad from './modules/first-load'
 
-function contentDiv() {
-  const contentDiv = document.createElement('div')
+firstLoad()
 
-  contentDiv.setAttribute('id', 'content')
+function switchTab(tab) {
+  const main = document.querySelector('main')
+  
+  main.removeChild(div.firstChild)
 
-  return contentDiv;
+  tab()
 }
-
-document.body.appendChild(contentDiv())

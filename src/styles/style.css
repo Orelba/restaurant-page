@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+  --golden: rgb(255, 201, 106);
+  --light-grey: rgb(242, 242, 242);
+  --dark-grey: rgb(38, 38, 38);
+  --section-height: 80px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  backdrop-filter: brightness(65%);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: var(--section-height);
+  border-bottom: 2px solid var(--golden);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+li {
+  color: white;
+  margin: 0 20px;
+}
+
+li:hover {
+  border-bottom: 2px solid var(--golden);
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+main {
+  text-align: center;
+}
+
+.cursive {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 8rem;
+  color: var(--golden);
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  margin-top: -88px;
+}
+
+hr {
+  width: 280px;
+  border: 2px solid var(--golden);
+  margin: 24px auto;
+}
+
+.description {
+  color: white;
+}
+
+button {
+  appearance: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--golden);
+  padding: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+}
+
+footer {
+  height: var(--section-height);
+  border-top: 2px solid var(--golden);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer p {
+  /* font-size: 14px; */
+  color: white;
+}
+
+footer a {
+  display: flex;
+}
