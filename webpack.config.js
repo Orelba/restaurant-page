@@ -2,26 +2,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     index: './src/index.js',
-    template: './src/modules/template.js',
-    first_load: './src/modules/first-load.js',
-    home: './src/modules/home.js',
-    menu: './src/modules/menu.js',
-    about: './src/modules/about.js',
   },
-  devtool: 'inline-source-map',
   devServer: {
     static: './dist'
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
+      favicon: './src/images/favicon.png',
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -37,7 +32,7 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    runtimeChunk: 'single',
+  performance: {
+    hints: false,
   },
 }

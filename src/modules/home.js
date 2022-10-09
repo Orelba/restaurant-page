@@ -17,6 +17,7 @@ function home() {
 
   const btn = document.createElement('button')
   btn.textContent = 'See the menu'
+  btn.classList.add('menu-btn')
 
   home.append(cursiveText, heading, breakLine, description, btn)
 

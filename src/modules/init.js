@@ -1,6 +1,7 @@
 import template from './template.js'
 
-function firstLoad() {
+// Render website structure
+function initWebsite() {
   const contentDiv = document.createElement('div')
 
   contentDiv.setAttribute('id', 'content')
@@ -10,4 +11,4 @@ function firstLoad() {
   document.body.append(contentDiv)
 }
 
-export default firstLoad
+export default initWebsite
